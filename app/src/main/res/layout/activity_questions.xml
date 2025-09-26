@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/questions_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="@string/what_country_does_this_flag_belong_to"/>
+        
+        <ImageView
+            android:id="@+id/flag_image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/flag_of_finland"
+            android:contentDescription="@string/flag_of_the_country"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <TextView
+                android:id="@+id/progress_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="0/10"
+                android:layout_marginStart="5dp"
+                android:textSize="15sp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/option_1"
+            android:background="@drawable/default_border_bg"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/option_2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_border_bg"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/option_3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_border_bg"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/text_view_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/option_4"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_border_bg"
+            android:textStyle="normal"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:textColor="@color/white"
+            android:text="@string/check"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
